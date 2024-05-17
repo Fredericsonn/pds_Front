@@ -108,8 +108,6 @@ public class ProductCrud {
     
                 // We dynamically generate the corresponding json :
                 String json = Parser.jsonGenerator(map);
-
-                System.out.println(json);
     
                 // We use the json to send an http post request to the server to create the new product with the entered values :
                 String productCreationResult = ProductDto.postProduct(json);
@@ -122,6 +120,8 @@ public class ProductCrud {
                 else FXManager.showAlert(AlertType.ERROR, "ERROR", "Creation Status  :", "Internal Server Error");
     
                 ((Stage) button.getScene().getWindow()).close(); // We close the create page after confirming the creation
+
+                FXManager.showWrappableAlert(AlertType.INFORMATION, "Information", "Item Creation  :", "A new inventory item was initialized in the inventory with a quantity of 0 and a price of 100, you may change the price manually in the inventory page.");
             
             }
 
@@ -178,7 +178,7 @@ public class ProductCrud {
                     if (newbrand != null) {
                     
                         // We get all the corresponding models for the newly selected brand and category
-                        String modelJson = Parser.jsonGenerator(ProductParser.categoryFilter(Arrays.asList(null,(String) newbrand,null)));
+                        String modelJson = Parser.jsonGenerator(ProductParser.categoryFilter(Arrays.asList((String) newCategory,(String) newbrand,null)));
 
                         List<String> modelsByBrand = CategoryDto.categoryFilter("modelName", modelJson);
 

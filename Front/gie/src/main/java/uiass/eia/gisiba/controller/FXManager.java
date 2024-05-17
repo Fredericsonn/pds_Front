@@ -180,7 +180,7 @@ public class FXManager {
 
     @SuppressWarnings("unchecked")
     // Populate a combo box using a list of items
-    public static void populateComboBox(ComboBox comboBox, List<?> itemsList) {
+    public static void populateComboBox(ComboBox comboBox, List<String> itemsList) {
 
         comboBox.getItems().clear();
 

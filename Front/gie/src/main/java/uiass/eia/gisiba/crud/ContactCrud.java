@@ -325,7 +325,7 @@ public class ContactCrud {
         // We collect the send button from the fxml file
         Button send = FXManager.getButton(pane, "sendEmailBtn");
 
-        // We add the corresponding event listener to the butto
+        // We add the corresponding event listener to the button
         ContactCrud.sendEmail(pane, send, receiverEmail);
 
         // We add the stage info and show it

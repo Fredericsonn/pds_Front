@@ -15,6 +15,7 @@ import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import uiass.eia.gisiba.FX.ProductFX;
 import uiass.eia.gisiba.controller.FXManager;
 import uiass.eia.gisiba.http.dto.CategoryDto;
 import uiass.eia.gisiba.http.parsers.Parser;
@@ -255,7 +256,7 @@ public class CategoryCrud {
 
         ComboBox modelComboBox = comboBoxes.get(2);
 
-        List<String> categoriesList = CategoryDto.getAllCategoryColumnNames("category"); // We get all the categories that we have 
+        List<String> categoriesList = ProductFX.categories; // We get all the categories that we have 
 
         FXManager.populateComboBox(categoryComboBox, categoriesList); // We add the categories as the category combo box items
 

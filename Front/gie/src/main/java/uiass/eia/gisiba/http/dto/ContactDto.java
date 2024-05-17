@@ -85,7 +85,7 @@ public class ContactDto {
     // Send an email to a contact :
     public static String postEmail(String json) {
         
-        return DataSender.postDataSender(json, "email");
+        return DataSender.postDataSender(json, "email/");
     }
 
 //////////////////////////////////////////////////// Delete METHOD /////////////////////////////////////////////////////////////
