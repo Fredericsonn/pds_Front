@@ -1,0 +1,5 @@
+pour executer le jar du front (dans le repertoire target) : java --module-path /javafx-sdk-21.0.2\lib --add-modules javafx.controls,javafx.fxml -jar gie-1.0-SNAPSHOT.jar
+
+il faut associer un prix au produit (item) dans la section inventory manuelement apres avoir creer un nouveau produit (description)
+
+veuillez choisir un type de fournisseur dans la page de la selection du fournisseur lors de la creation d'un nouveau achat pour etre guide par un message

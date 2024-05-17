@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="chooseBrandLabel" layoutX="30.0" layoutY="124.0" prefHeight="43.0" prefWidth="182.0" text="Choose an existing brand :">
+         <font>
+            <Font size="11.0" />
+         </font></Label>
+      <Label fx:id="createNewBrandLabel" layoutX="409.0" layoutY="124.0" prefHeight="43.0" prefWidth="236.0" text="Create a new one : (press enter to validate)">
+         <font>
+            <Font size="11.0" />
+         </font></Label>
+      <Label fx:id="chooseModelLabel" layoutX="30.0" layoutY="228.0" prefHeight="43.0" prefWidth="182.0" text="Choose an existing model :">
+         <font>
+            <Font size="11.0" />
+         </font></Label>
+      <Label fx:id="createNewModelLabel" layoutX="409.0" layoutY="229.0" prefHeight="43.0" prefWidth="252.0" text="Create a new one : (press enter to validate)">
+         <font>
+            <Font size="11.0" />
+         </font></Label>
+      <Button fx:id="confirmBtn" layoutX="267.0" layoutY="360.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="114.0" text="CONFIRM" />
+      <HBox fx:id="brandHbox" alignment="CENTER" layoutX="30.0" layoutY="154.0" prefHeight="80.0" prefWidth="605.0" spacing="55.0">
+         <children>
+            <ComboBox fx:id="brandComboBox" prefHeight="63.0" prefWidth="236.0" promptText="brand" />
+            <Label fx:id="orLabel1" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="112.0" text="OR">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="brandTextField" prefHeight="63.0" prefWidth="268.0" promptText="brand name" />
+         </children>
+      </HBox>
+      <HBox fx:id="modelHbox" alignment="CENTER" layoutX="30.0" layoutY="260.0" prefHeight="80.0" prefWidth="605.0" spacing="55.0">
+         <children>
+            <ComboBox fx:id="modelComboBox" prefHeight="63.0" prefWidth="236.0" promptText="model" />
+            <Label fx:id="orLabel2" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="112.0" text="OR">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="modelTextField" prefHeight="63.0" prefWidth="268.0" promptText="model name" />
+         </children>
+      </HBox>
+      <ComboBox fx:id="categoryComboBox" layoutX="30.0" layoutY="47.0" prefHeight="63.0" prefWidth="196.0" promptText="category" />
+      <Label fx:id="chooseCategoryLabel1" layoutX="30.0" layoutY="11.0" prefHeight="43.0" prefWidth="182.0" text="Choose a category :">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <HBox fx:id="categoryHbox" alignment="CENTER" layoutX="267.0" layoutY="29.0" prefHeight="91.0" prefWidth="200.0" spacing="10.0" visible="false">
+         <children>
+            <AnchorPane fx:id="categoryContainer" prefHeight="87.0" prefWidth="72.0">
+               <children>
+                  <ImageView fx:id="categoryImg" fitHeight="88.0" fitWidth="86.0">
+                     <image>
+                        <Image url="@../../imgs/brand-image.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label fx:id="categroyNameLabel" prefHeight="30.0" prefWidth="103.0" text="Category Name" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

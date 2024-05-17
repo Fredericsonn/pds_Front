@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="529.0" prefWidth="700.0">
+         <children>
+            <VBox prefHeight="503.0" prefWidth="690.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="46.0" prefWidth="782.0" text="PURCHASE SUMMARY">
+                     <VBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Calibri" size="24.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="383.0" prefWidth="690.0">
+                     <children>
+                        <VBox fx:id="leftVBox" alignment="CENTER" prefHeight="322.0" prefWidth="330.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="36.0" prefWidth="342.0" text="SUPPLIER'S INFORMATION">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <HBox fx:id="supplierHBox" prefHeight="284.0" prefWidth="326.0">
+                                 <children>
+                                    <AnchorPane prefHeight="288.0" prefWidth="158.0">
+                                       <children>
+                                          <AnchorPane layoutX="-1.0" layoutY="25.0" prefHeight="195.0" prefWidth="141.0">
+                                             <children>
+                                                <ImageView fx:id="personImg" fitHeight="148.0" fitWidth="141.0" layoutX="-1.0" layoutY="-1.0">
+                                                   <image>
+                                                      <Image url="@../../imgs/man.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                    <VBox prefHeight="322.0" prefWidth="188.0">
+                                       <children>
+                                          <Label fx:id="fullNameLabel" prefHeight="25.0" prefWidth="187.0" text="name">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="phoneNumberLabel" prefHeight="32.0" prefWidth="186.0" text="phone number" wrapText="true">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="emailLabel" prefHeight="36.0" prefWidth="170.0" text="email" wrapText="true">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="addressLabel" prefHeight="46.0" prefWidth="187.0" text="address" wrapText="true">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets top="30.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <VBox prefHeight="120.0" prefWidth="326.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="103.0" prefWidth="326.0" spacing="30.0">
+                                       <children>
+                                          <Label prefHeight="34.0" prefWidth="106.0" text="Purchase Date :">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="purchaseDateLabel" prefHeight="34.0" prefWidth="106.0" text="Date">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="106.0" prefWidth="326.0" spacing="30.0">
+                                       <children>
+                                          <Label prefHeight="34.0" prefWidth="106.0" text="Total Amount :">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="purchaseAmountLabel" prefHeight="34.0" prefWidth="106.0" text="Amount">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </VBox>
+                        <VBox fx:id="ordersVBox" prefHeight="322.0" prefWidth="358.0" spacing="5.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="38.0" prefWidth="414.0" text="ORDERS MADE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TableView fx:id="ordersTableView" prefHeight="291.0" prefWidth="359.0" />
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="70.0" prefWidth="694.0">
+                     <children>
+                        <Button fx:id="confirmPurchaseBtn" mnemonicParsing="false" prefHeight="36.0" prefWidth="161.0" text="CONFIRM PURCHASE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

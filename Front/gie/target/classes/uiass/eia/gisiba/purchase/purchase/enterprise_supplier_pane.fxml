@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="276.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="417.0" prefWidth="276.0">
+         <children>
+            <Label text="SUPPLIER INFO">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <HBox fx:id="supplierHbox" prefHeight="416.0" prefWidth="276.0" spacing="10.0">
+               <children>
+                  <ImageView fx:id="enterpriseImg" fitHeight="137.0" fitWidth="116.0">
+                     <image>
+                        <Image url="@../../imgs/office-building.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox prefHeight="342.0" prefWidth="166.0">
+                     <children>
+                        <Label fx:id="enterpriseTypeLabel" prefHeight="26.0" prefWidth="166.0" text="enterprise type" />
+                        <Label fx:id="enterpriseNameLabel" prefHeight="26.0" prefWidth="166.0" text="enterprise name" />
+                        <Label fx:id="phoneNumberLabel" prefHeight="26.0" prefWidth="166.0" text="phone number" />
+                        <Label fx:id="emailLabel" prefHeight="42.0" prefWidth="140.0" text="email" wrapText="true" />
+                        <Label fx:id="addressLabel" prefHeight="43.0" prefWidth="166.0" text="address" wrapText="true" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets top="60.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

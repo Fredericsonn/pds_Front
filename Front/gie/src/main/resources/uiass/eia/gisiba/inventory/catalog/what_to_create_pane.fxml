@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="questionLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="90.0" layoutY="27.0" prefHeight="70.0" prefWidth="419.0" text="WHAT DO YOU WANT TO CREATE ?">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <HBox fx:id="mainHbox" alignment="CENTER" layoutX="6.0" layoutY="158.0" prefHeight="166.0" prefWidth="594.0" spacing="225.0">
+         <children>
+            <VBox fx:id="categoryVbox" alignment="CENTER" prefHeight="162.0" prefWidth="118.0">
+               <children>
+                  <AnchorPane fx:id="categoryPane" prefHeight="99.0" prefWidth="118.0">
+                     <children>
+                        <ImageView fx:id="categoryImageView" fitHeight="120.0" fitWidth="118.0">
+                           <image>
+                              <Image url="@../../imgs/brand-image.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="categoryLabel" alignment="CENTER" prefHeight="42.0" prefWidth="118.0" text="Brand / Model ">
+                     <font>
+                        <Font size="13.5" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="productVbox" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+               <children>
+                  <AnchorPane fx:id="productPane" prefHeight="119.0" prefWidth="118.0">
+                     <children>
+                        <ImageView fx:id="productImageView" fitHeight="120.0" fitWidth="118.0" layoutY="5.0">
+                           <image>
+                              <Image url="@../../imgs/product.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="productLabel" alignment="CENTER" prefHeight="36.0" prefWidth="118.0" text="Product">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

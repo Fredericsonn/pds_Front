@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="supplierHBox" prefHeight="324.0" prefWidth="327.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="288.0" prefWidth="158.0">
+         <children>
+            <AnchorPane layoutX="-1.0" layoutY="25.0" prefHeight="195.0" prefWidth="141.0">
+               <children>
+                  <ImageView fx:id="personImg" fitHeight="148.0" fitWidth="141.0" layoutX="-1.0" layoutY="-1.0">
+                     <image>
+                        <Image url="@../../imgs/man.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <VBox prefHeight="322.0" prefWidth="188.0">
+         <children>
+            <Label fx:id="fullNameLabel" prefHeight="25.0" prefWidth="187.0" text="name">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="phoneNumberLabel" prefHeight="32.0" prefWidth="187.0" text="phone number" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="emailLabel" prefHeight="36.0" prefWidth="187.0" text="email" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="addressLabel" prefHeight="46.0" prefWidth="187.0" text="address" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets top="30.0" />
+         </padding>
+      </VBox>
+   </children>
+</HBox>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="chooseCategoryLabel" layoutX="53.0" layoutY="55.0" prefHeight="43.0" prefWidth="182.0" text="Choose an existing brand :" />
+      <Label fx:id="createNewCategoryLabel" layoutX="510.0" layoutY="55.0" prefHeight="43.0" prefWidth="236.0" text="Create a new one : (press enter to validate)" />
+      <Label fx:id="chooseBrandLabel" layoutX="55.0" layoutY="204.0" prefHeight="43.0" prefWidth="182.0" text="Choose an existing model :" />
+      <Label fx:id="createNewBrandLabel" layoutX="514.0" layoutY="204.0" prefHeight="43.0" prefWidth="236.0" text="Create a new one : (press enter to validate)" />
+      <Button fx:id="confirmBtn" layoutX="322.0" layoutY="345.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="159.0" text="CONFIRM" />
+      <HBox fx:id="categoryHbox" alignment="CENTER" layoutX="-1.0" layoutY="77.0" prefHeight="112.0" prefWidth="802.0" spacing="55.0">
+         <children>
+            <ComboBox fx:id="brandComboBox" prefHeight="63.0" prefWidth="236.0" promptText="brand" />
+            <Label fx:id="orLabel1" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="112.0" text="OR">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="brandTextField" prefHeight="63.0" prefWidth="236.0" promptText="brand name" />
+         </children>
+      </HBox>
+      <HBox fx:id="brandHbox" alignment="CENTER" layoutX="1.0" layoutY="226.0" prefHeight="112.0" prefWidth="802.0" spacing="55.0">
+         <children>
+            <ComboBox fx:id="modelComboBox" prefHeight="63.0" prefWidth="236.0" promptText="model" />
+            <Label fx:id="orLabel2" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="112.0" text="OR">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="modelTextField" prefHeight="63.0" prefWidth="236.0" promptText="model name" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
